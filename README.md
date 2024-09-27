@@ -2,4 +2,14 @@
 
 # Flurib
 
-Library for building Uri fluently
+Library for building Uri fluently.
+
+## Function
+
+Build regular Uri like http, https and so on.
+
+Build irregular Uri like magnet, pack, avares, ms-appx. 
+
+## Thanks
+
+https://github.com/TerribleDev/UriBuilder.Fluent
