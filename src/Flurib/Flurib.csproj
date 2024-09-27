@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<PackageId>Flurib</PackageId>
+		<Product>Flurib</Product>
+		<TargetFrameworks>.netstandard2.0</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<AssemblyName>Flurib</AssemblyName>
+		<EnableWindowsTargeting>true</EnableWindowsTargeting>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<AssemblyVersion>0.1.0.0</AssemblyVersion>
+		<FileVersion>0.1.0.0</FileVersion>
+		<Version>$(VersionPrefix)0.1.0.0-beta</Version>
+		<Authors>ema</Authors>
+		<Company>Lemutec</Company>
+		<Description>Library for building Uri fluently</Description>
+		<PackageProjectUrl>https://github.com/lemutec/Flurib</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/lemutec/Flurib</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>.NET Uri UriBuilder</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>logo.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Pack="true" PackagePath="" />
+		<None Include="..\..\image\logo.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+</Project>
