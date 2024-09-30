@@ -19,6 +19,7 @@ public partial class FluriBuilder
 
     /// <summary>
     /// Create a resource URI
+    /// pack://application:,,,/Assets/Images/logo.ico
     /// </summary>
     /// <param name="resourcePath"></param>
     /// <returns></returns>
@@ -30,13 +31,14 @@ public partial class FluriBuilder
 
     /// <summary>
     /// Create a cross-assembly resource URI
+    /// pack://application:,,,/Flurib;component/Assets/Images/logo.ico
     /// </summary>
     /// <param name="assemblyName"></param>
     /// <param name="resourcePath"></param>
     /// <returns></returns>
     public FluriBuilder CreateAssemblyResourceUri(string assemblyName, string resourcePath)
     {
-        IrregularUri = new Uri($"{UriSchemePack}://application:,,,/,{assemblyName};component/{resourcePath}", UriKind.Absolute);
+        IrregularUri = new Uri($"{UriSchemePack}://application:,,,/{assemblyName};component/{resourcePath}", UriKind.Absolute);
         return this;
     }
 }
